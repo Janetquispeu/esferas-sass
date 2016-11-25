@@ -4,85 +4,97 @@
   box-sizing: border-box; }
 
 .container {
-  background: white;
-  display: flex;
-  align-items: center; }
+  position: relative;
+  width: 20em;
+  height: 20em;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  margin: 13em auto 0; }
   .container .esfera {
     background: #ff9933;
     border-radius: 50px;
     height: 100px;
     width: 100px;
     padding: 25px; }
-  .container .estrella-1 .star-five {
-    margin: 12.5px 0;
-    position: relative;
-    display: block;
-    color: #ff0000;
-    width: 0px;
-    height: 0px;
-    border-right: 25px solid transparent;
-    border-bottom: 17.5px solid #ff0000;
-    border-left: 25px solid transparent;
-    -moz-transform: rotate(35deg);
-    -webkit-transform: rotate(35deg);
-    -ms-transform: rotate(35deg);
-    -o-transform: rotate(35deg); }
-  .container .estrella-1 .star-five:before {
-    border-bottom: 20px solid #ff0000;
-    border-left: 7.5px solid transparent;
-    border-right: 7.5px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -11.25px;
-    left: -16.25px;
-    display: block;
-    content: '';
-    -webkit-transform: rotate(-35deg);
-    -moz-transform: rotate(-35deg);
-    -ms-transform: rotate(-35deg);
-    -o-transform: rotate(-35deg); }
-  .container .estrella-1 .star-five:after {
-    position: absolute;
-    display: block;
-    color: #ff0000;
-    top: 0.75px;
-    left: -26.25px;
-    width: 0px;
-    height: 0px;
-    border-right: 25px solid transparent;
-    border-bottom: 17.5px solid #ff0000;
-    border-left: 25px solid transparent;
-    -webkit-transform: rotate(-70deg);
-    -moz-transform: rotate(-70deg);
-    -ms-transform: rotate(-70deg);
-    -o-transform: rotate(-70deg);
-    content: ''; }
-  .container .estrella-2 {
-    display: inline-block; }
-    .container .estrella-2 .star-five {
-      margin: 10px 0;
+  .container .estrella-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px 15px; }
+    .container .estrella-1 .star-five {
+      margin: 6px 0;
       position: relative;
       display: block;
       color: #ff0000;
       width: 0px;
       height: 0px;
-      border-right: 20px solid transparent;
-      border-bottom: 14px solid #ff0000;
-      border-left: 20px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .container .estrella-1 .star-five:before {
+      border-bottom: 9.6px solid #ff0000;
+      border-left: 3.6px solid transparent;
+      border-right: 3.6px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -5.4px;
+      left: -7.8px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .container .estrella-1 .star-five:after {
+      position: absolute;
+      display: block;
+      color: #ff0000;
+      top: 0.36px;
+      left: -12.6px;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+  .container .estrella-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px 15px; }
+    .container .estrella-2 .star-five {
+      margin: 6px 0;
+      position: relative;
+      display: block;
+      color: #ff0000;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
       -moz-transform: rotate(35deg);
       -webkit-transform: rotate(35deg);
       -ms-transform: rotate(35deg);
       -o-transform: rotate(35deg); }
     .container .estrella-2 .star-five:before {
-      border-bottom: 16px solid #ff0000;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
+      border-bottom: 9.6px solid #ff0000;
+      border-left: 3.6px solid transparent;
+      border-right: 3.6px solid transparent;
       position: absolute;
       height: 0;
       width: 0;
-      top: -9px;
-      left: -13px;
+      top: -5.4px;
+      left: -7.8px;
       display: block;
       content: '';
       -webkit-transform: rotate(-35deg);
@@ -93,62 +105,295 @@
       position: absolute;
       display: block;
       color: #ff0000;
-      top: 0.6px;
-      left: -21px;
+      top: 0.36px;
+      left: -12.6px;
       width: 0px;
       height: 0px;
-      border-right: 20px solid transparent;
-      border-bottom: 14px solid #ff0000;
-      border-left: 20px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
       -webkit-transform: rotate(-70deg);
       -moz-transform: rotate(-70deg);
       -ms-transform: rotate(-70deg);
       -o-transform: rotate(-70deg);
       content: ''; }
-  .container .estrella-3 .star-five {
-    margin: 7.5px 0;
-    position: relative;
+  .container .estrella-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 15px; }
+    .container .estrella-3 .star-five {
+      margin: 6px 0;
+      position: relative;
+      display: block;
+      color: #ff0000;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .container .estrella-3 .star-five:before {
+      border-bottom: 9.6px solid #ff0000;
+      border-left: 3.6px solid transparent;
+      border-right: 3.6px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -5.4px;
+      left: -7.8px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .container .estrella-3 .star-five:after {
+      position: absolute;
+      display: block;
+      color: #ff0000;
+      top: 0.36px;
+      left: -12.6px;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+  .container .estrella-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 15px; }
+    .container .estrella-4 .star-five {
+      margin: 6px 0;
+      position: relative;
+      display: block;
+      color: #ff0000;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .container .estrella-4 .star-five:before {
+      border-bottom: 9.6px solid #ff0000;
+      border-left: 3.6px solid transparent;
+      border-right: 3.6px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -5.4px;
+      left: -7.8px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .container .estrella-4 .star-five:after {
+      position: absolute;
+      display: block;
+      color: #ff0000;
+      top: 0.36px;
+      left: -12.6px;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+  .container .estrella-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 15px; }
+    .container .estrella-5 .star-five {
+      margin: 6px 0;
+      position: relative;
+      display: block;
+      color: #ff0000;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .container .estrella-5 .star-five:before {
+      border-bottom: 9.6px solid #ff0000;
+      border-left: 3.6px solid transparent;
+      border-right: 3.6px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -5.4px;
+      left: -7.8px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .container .estrella-5 .star-five:after {
+      position: absolute;
+      display: block;
+      color: #ff0000;
+      top: 0.36px;
+      left: -12.6px;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+  .container .estrella-6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 15px; }
+    .container .estrella-6 .star-five {
+      margin: 6px 0;
+      position: relative;
+      display: block;
+      color: #ff0000;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .container .estrella-6 .star-five:before {
+      border-bottom: 9.6px solid #ff0000;
+      border-left: 3.6px solid transparent;
+      border-right: 3.6px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -5.4px;
+      left: -7.8px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .container .estrella-6 .star-five:after {
+      position: absolute;
+      display: block;
+      color: #ff0000;
+      top: 0.36px;
+      left: -12.6px;
+      width: 0px;
+      height: 0px;
+      border-right: 12px solid transparent;
+      border-bottom: 8.4px solid #ff0000;
+      border-left: 12px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+  .container .estrella-7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 15px; }
+    .container .estrella-7 .star-five {
+      margin: 5.5px 0;
+      position: relative;
+      display: block;
+      color: #ff0000;
+      width: 0px;
+      height: 0px;
+      border-right: 11px solid transparent;
+      border-bottom: 7.7px solid #ff0000;
+      border-left: 11px solid transparent;
+      -moz-transform: rotate(35deg);
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg); }
+    .container .estrella-7 .star-five:before {
+      border-bottom: 8.8px solid #ff0000;
+      border-left: 3.3px solid transparent;
+      border-right: 3.3px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -4.95px;
+      left: -7.15px;
+      display: block;
+      content: '';
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg); }
+    .container .estrella-7 .star-five:after {
+      position: absolute;
+      display: block;
+      color: #ff0000;
+      top: 0.33px;
+      left: -11.55px;
+      width: 0px;
+      height: 0px;
+      border-right: 11px solid transparent;
+      border-bottom: 7.7px solid #ff0000;
+      border-left: 11px solid transparent;
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      content: ''; }
+  .container > * {
     display: block;
-    color: #ff0000;
-    width: 0px;
-    height: 0px;
-    border-right: 15px solid transparent;
-    border-bottom: 10.5px solid #ff0000;
-    border-left: 15px solid transparent;
-    -moz-transform: rotate(35deg);
-    -webkit-transform: rotate(35deg);
-    -ms-transform: rotate(35deg);
-    -o-transform: rotate(35deg); }
-  .container .estrella-3 .star-five:before {
-    border-bottom: 12px solid #ff0000;
-    border-left: 4.5px solid transparent;
-    border-right: 4.5px solid transparent;
     position: absolute;
-    height: 0;
-    width: 0;
-    top: -6.75px;
-    left: -9.75px;
-    display: block;
-    content: '';
-    -webkit-transform: rotate(-35deg);
-    -moz-transform: rotate(-35deg);
-    -ms-transform: rotate(-35deg);
-    -o-transform: rotate(-35deg); }
-  .container .estrella-3 .star-five:after {
-    position: absolute;
-    display: block;
-    color: #ff0000;
-    top: 0.45px;
-    left: -15.75px;
-    width: 0px;
-    height: 0px;
-    border-right: 15px solid transparent;
-    border-bottom: 10.5px solid #ff0000;
-    border-left: 15px solid transparent;
-    -webkit-transform: rotate(-70deg);
-    -moz-transform: rotate(-70deg);
-    -ms-transform: rotate(-70deg);
-    -o-transform: rotate(-70deg);
-    content: ''; }
+    top: 50%;
+    left: 50%;
+    width: 6em;
+    height: 6em;
+    margin: -3em; }
+    .container > *:nth-of-type(1) {
+      transform: rotate(0deg) translate(10em) rotate(0deg); }
+    .container > *:nth-of-type(2) {
+      transform: rotate(51.42857deg) translate(10em) rotate(-51.42857deg); }
+    .container > *:nth-of-type(3) {
+      transform: rotate(102.85714deg) translate(10em) rotate(-102.85714deg); }
+    .container > *:nth-of-type(4) {
+      transform: rotate(154.28571deg) translate(10em) rotate(-154.28571deg); }
+    .container > *:nth-of-type(5) {
+      transform: rotate(205.71429deg) translate(10em) rotate(-205.71429deg); }
+    .container > *:nth-of-type(6) {
+      transform: rotate(257.14286deg) translate(10em) rotate(-257.14286deg); }
+    .container > *:nth-of-type(7) {
+      transform: rotate(308.57143deg) translate(10em) rotate(-308.57143deg); }
+  .container .esfera {
+    max-width: 100%;
+    border-radius: 50%;
+    transition: .3s; }
+    .container .esfera:hover, .container .esfera:active {
+      filter: drop-shadow(0px 0px 25px yellow); }
 
 /*# sourceMappingURL=main.css.map */

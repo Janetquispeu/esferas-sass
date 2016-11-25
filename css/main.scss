@@ -1,12 +1,13 @@
-@import "_variable";
+@import "_variables";
 @import "_esfera";
+@import "_mixin";
 
 * {
 	box-sizing : border-box;
 }
-
+body{
+}
 .container {
-	background: white;
 	.esfera{
 		background: $color-esfera;
 		border-radius: $base-tamanio-esfera/2;
@@ -15,16 +16,44 @@
 		padding: $base-tamanio-esfera/4;
 	}
 	.estrella-1{
-		@include star;
+		@include star(12px);
+		@include star-center(35px,15px);
 	}
 	.estrella-2{
-		@include star(20px);
-		display: inline-block;
+		@include star(12px);
+		@include star-center(35px,15px);
 	}
 	.estrella-3{
-		@include star(15px);
+		@include star(12px);
+		@include star-center(20px,15px);
 	}
-
-	display:flex;
-	align-items:center;
+	.estrella-4{
+		@include star(12px);
+		@include star-center(25px,15px);
+	}
+	.estrella-5{
+		@include star(12px);
+		@include star-center(15px,15px);
+	}
+	.estrella-6{
+		@include star(12px);
+		@include star-center(15px,15px);
+	}
+	.estrella-7{
+		@include star(11px);
+		@include star-center(15px,15px);
+	}
+	@include on-circle($item-count: 7, $circle-size: 20em, $item-size: 6em); 
+  margin: 13em auto 0;
+  .esfera { 
+    max-width: 100%; 
+    border-radius: 50%;
+    transition: .3s;
+    
+    &:hover,
+    &:active {
+      filter: drop-shadow(0px 0px 25px yellow);
+    }
+  }
 }
+
